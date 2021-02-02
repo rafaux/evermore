@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="90.534" viewBox="0 0 100 90.534">
+  <g id="Grupo_664" data-name="Grupo 664" transform="translate(-10927 -3703)">
+    <rect id="Retângulo_373" data-name="Retângulo 373" width="82" height="74" rx="9" transform="translate(10945 3711)" fill="#d8dffc"/>
+    <path id="Caminho_664" data-name="Caminho 664" d="M10945,3748.5l15.336-14.2h28.771l12.693,14.2-5.077,6.531-7.616-6.531h-4.23v31h-24.54v-31h-2.961l-7.193,6.531Z" transform="translate(-1 0.1)" fill="#ea575f"/>
+    <g id="online-shop" transform="translate(10927 3703)">
+      <path id="Caminho_631" data-name="Caminho 631" d="M78.353,150,58.73,167.557l12.34,13.574,6.525-5.075v27.2h31.953v-27.2l6.525,5.075,12.34-13.574L108.79,150Zm37.1,23.9-6.763-5.26h-4.464v29.29H82.92v-29.29H78.457l-6.763,5.26-5.412-5.953,14.106-12.621h26.369l14.106,12.621Z" transform="translate(-48.304 -123.372)" fill="#1e2541"/>
+      <path id="Caminho_632" data-name="Caminho 632" d="M374.394,348.16l5.649,5.649-5.649,5.648,3.766,3.766,9.414-9.414-9.414-9.414Z" transform="translate(-307.932 -283.258)" fill="#1e2541"/>
+      <path id="Caminho_633" data-name="Caminho 633" d="M70.774,344.394l-9.414,9.414,9.414,9.414,3.766-3.766-5.649-5.648,5.649-5.649Z" transform="translate(-50.467 -283.258)" fill="#1e2541"/>
+      <path id="Caminho_634" data-name="Caminho 634" d="M0,0V80.293A10.253,10.253,0,0,0,10.241,90.534H80.293A10.253,10.253,0,0,0,90.534,80.293V0ZM85.209,15.977H74.558V5.326H85.209ZM10.651,5.326v5.326h5.326V5.326H21.3v5.326h5.326V5.326h5.326v5.326h5.326V5.326H69.232V15.977H5.326V5.326ZM80.293,85.209H10.241a4.921,4.921,0,0,1-4.916-4.916V21.3H85.209V80.293a4.921,4.921,0,0,1-4.916,4.916Z" fill="#1e2541"/>
+    </g>
+  </g>
+</svg>

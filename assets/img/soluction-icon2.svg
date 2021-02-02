@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="86" viewBox="0 0 88 86">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_336" data-name="Retângulo 336" width="86" height="86" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_838" data-name="Grupo 838" transform="translate(-917 -5341)">
+    <rect id="Retângulo_348" data-name="Retângulo 348" width="71" height="51" transform="translate(934 5346)" fill="#d8dffc"/>
+    <g id="Grupo_605" data-name="Grupo 605" transform="translate(712 5500)">
+      <g id="Grupo_589" data-name="Grupo 589" transform="translate(205 -159)" clip-path="url(#clip-path)">
+        <path id="Caminho_605" data-name="Caminho 605" d="M81.962,27.784H80.573V11.114H13.892V0H6.946A6.954,6.954,0,0,0,0,6.946V59.735a6.954,6.954,0,0,0,6.946,6.946H44.454V81.962a4.173,4.173,0,0,0,4.168,4.168H81.962a4.173,4.173,0,0,0,4.168-4.168V31.951a4.173,4.173,0,0,0-4.168-4.168M2.778,6.946A4.173,4.173,0,0,1,6.946,2.778h4.168V52.789H6.946a6.918,6.918,0,0,0-4.168,1.392ZM6.946,63.9a4.168,4.168,0,0,1,0-8.335h6.946V13.892h63.9V27.784H49.052a16.685,16.685,0,1,0-4.6,17.964V63.9ZM44.454,31.951H34.73V19.527a13.942,13.942,0,0,1,11.622,8.938,4.159,4.159,0,0,0-1.9,3.487m-12.5,15.211a13.891,13.891,0,0,1,0-27.643ZM34.73,34.73h9.724v6.915a13.9,13.9,0,0,1-9.724,5.5ZM83.351,81.962a1.392,1.392,0,0,1-1.389,1.389H48.622a1.392,1.392,0,0,1-1.389-1.389V31.951a1.392,1.392,0,0,1,1.389-1.389H81.962a1.392,1.392,0,0,1,1.389,1.389Z" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_606" data-name="Caminho 606" d="M288,205.892h30.562V192H288Zm2.778-11.113h25.005v8.335H290.778Z" transform="translate(-237.989 -158.659)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_607" data-name="Caminho 607" d="M416,424.335h8.335V416H416Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-343.762 -343.762)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_608" data-name="Caminho 608" d="M352,424.335h8.335V416H352Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-290.876 -343.762)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_609" data-name="Caminho 609" d="M288,424.335h8.335V416H288Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-237.989 -343.762)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_610" data-name="Caminho 610" d="M416,360.335h8.335V352H416Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-343.762 -290.876)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_611" data-name="Caminho 611" d="M352,360.335h8.335V352H352Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-290.876 -290.876)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_612" data-name="Caminho 612" d="M288,360.335h8.335V352H288Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-237.989 -290.876)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_613" data-name="Caminho 613" d="M416,296.335h8.335V288H416Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-343.762 -237.989)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_614" data-name="Caminho 614" d="M352,296.335h8.335V288H352Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-290.876 -237.989)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <path id="Caminho_615" data-name="Caminho 615" d="M288,296.335h8.335V288H288Zm2.778-5.557h2.778v2.778h-2.778Z" transform="translate(-237.989 -237.989)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <rect id="Retângulo_334" data-name="Retângulo 334" width="20" height="4" transform="translate(55 16)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+        <rect id="Retângulo_335" data-name="Retângulo 335" width="22" height="3" transform="translate(53 22)" fill="#1e2541" stroke="#1e2541" stroke-width="1"/>
+      </g>
+    </g>
+    <path id="Subtração_2" data-name="Subtração 2" d="M-6170.375,32a10.8,10.8,0,0,1-8.221-3.954A14.581,14.581,0,0,1-6182,18.5a14.579,14.579,0,0,1,3.4-9.545A10.8,10.8,0,0,1-6170.375,5c.125,0,.25,0,.375.007V31.994C-6170.134,32-6170.26,32-6170.375,32Z" transform="translate(7119 5356)" fill="#ea575f"/>
+  </g>
+</svg>
