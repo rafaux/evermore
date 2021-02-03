@@ -60,10 +60,9 @@
     /* blocks */
     #blocks { margin-bottom: 100px; }
     #blocks h6 { margin: 70px 0px; font-size: 60px; }
-    #blocks section article { height: 300px; padding: 80px 50px 0px 50px; }
     #blocks section article small,
-    #blocks section article strong { font-size: 30px; }
-    #blocks section article sub { font-size: 30px; }
+    #blocks section article strong { font-size: 30px !important; }
+    #blocks section article sub { font-size: 30px !important; }
 
     /* faq */
     #faq { margin-bottom: 80px; padding: 90px 0px; }
@@ -143,85 +142,9 @@
 
     /* blocks */
     #blocks h6 { font-size: 36px; }
-    #blocks section article { height: 240px; padding: 50px 30px 0px 30px; }
+    #blocks section article .main { padding: 50px 30px 0px 30px; }
     #blocks section article small,
-    #blocks section article strong { font-size: 24px; }
-
-    /* map */
-    #map { margin: 35px 0px; }
-    #map iframe { height: 300px; }
-
-    /* footer */
-    #footer aside .newsletter strong { font-size: 24px; }
-    #footer aside .newsletter input { height: 50px; font-size: 14px; }
-    #footer section nav li a { font-size: 15px; }
-    #footer section .address { margin-left: 50px; }
-    #footer section .address strong { font-size: 18px; }
-    #footer section .address p,
-    #footer section .address span a { font-size: 14px; }
-    #footer .social li a { width: 36px; height: 36px; line-height: 36px; font-size: 15px; }
-    #footer .bottom small, #footer .bottom nav li { font-size: 12px; }
-
-}
-
-@media (max-height: 700px){
-
-    /* global */
-    body { font-size: 16px; }
-
-    /* bt */
-    .bt { height: 50px; padding: 0px 90px 0px 20px; font-size: 15px; border-width: 2px; line-height: 44px; }
-    .bt::after { width: 42px; border-left-width: 1px; }
-
-    /* feat */
-    #feat section small { font-size: 24px; }
-    #feat section h1 { font-size: 40px; }
-    #feat span em { font-size: 13px; }
-
-    /* menu */
-    #menu nav li a { font-size: 24px; }
-    #menu aside strong { font-size: 18px; }
-    #menu aside p,
-    #menu aside small a { font-size: 14px; }
-    #menu.on nav { left: 110px !important; }
-    #menu.on aside { right: 110px !important; }
-    
-    /* item */
-    .item-side section small { font-size: 14px; }
-    .item.solo section h2 { font-size: 40px; line-height: 1.8; }
-    .item-side section h3 { font-size: 36px; }
-    .item-center { padding: 60px 0px; }
-    .item-center section h6 { font-size: 40px; }
-    .item-side-txt section h6 { font-size: 40px; }
-    .item.solo.about section small { font-size: 16px; }
-    .item.solo.about section h2 { font-size: 30px; }
-    .item-column header h2 { font-size: 48px; }
-    .item-column section article p { line-height: 1.8; }
-
-    /* solutions */
-    #solutions header h6 { font-size: 36px; }
-    #solutions section { grid-template-columns: 1fr 1fr; }
-    #solutions section article { padding-bottom: 100px; min-height: auto; }
-
-    /* faq */
-    #faq section header h6 { font-size: 40px; }
-
-    /* clients */
-    #clients section h6 { font-size: 40px; }
-
-    /* contact */
-    #contact { padding: 60px 0px; }
-    #contact section header h6 { font-size: 40px; }
-
-    /* news */
-    #news section figure img { height: 200px; }
-    #news section abbr { font-size: 14px; }
-
-    /* blocks */
-    #blocks h6 { font-size: 36px; }
-    #blocks section article { height: 240px; padding: 50px 30px 0px 30px; }
-    #blocks section article small,
-    #blocks section article strong { font-size: 24px; }
+    #blocks section article strong { font-size: 24px !important; }
 
     /* map */
     #map { margin: 35px 0px; }
@@ -279,7 +202,7 @@
 
 }
 
-@media (max-width: 640px){
+@media (max-width: 740px){
 
     /* global */
     body { font-size: 13px; }
@@ -341,11 +264,21 @@
     /* blocks */
     #blocks { margin-bottom: 40px; padding: 0px; }
     #blocks h6 { margin: 35px 0px; padding: 0px 10%; font-size: 30px; }
-    #blocks section { grid-template-columns: 1fr; }
-    #blocks section article { height: 460px; padding: 100px 80px 0px 80px; }
+    #blocks section { display: inline-block; width: 100%; }
+    #blocks section article { display: inline-block; width: 100%; height: 360px; white-space: nowrap; overflow-x: auto; }
+    #blocks section article .main { padding: 100px 80px 0px 80px; white-space: normal; }
     #blocks section article small { margin-bottom: 0px; }
     #blocks section article small, #blocks section article strong { font-size: 30px; line-height: 1.3; }
+    #blocks section article .main { display: inline-block; vertical-align: top; }
+    #blocks section article .sec { position: relative; display: inline-block; vertical-align: top; transition: none; }
+    #blocks section article .sec .main { display: none; }
+    #blocks section article .sec,
+    #blocks section article .sec .main,
+    #blocks section article .sec .cont { opacity: 1; }
+    #blocks section article .sec .cont { overflow-x: initial; transition: none; }
+    #blocks section article .sec .cont span { width: 240px; }
     #blocks sub { display: none; }
+    #blocks section article .sec .cont span p { font-size: 13px; }
 
     /* clients */
     #clients { margin: 30px 0px; }

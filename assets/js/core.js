@@ -25,6 +25,15 @@ $(document).ready(function(){
         }
     })
 
+    // Blocks
+    $('#blocks section article sub .fa-plus').click(function(){
+        $('#blocks section article').removeClass('on');
+        $(this).parent().parent().parent().addClass('on');
+    })
+    $('#blocks section article sub .fa-minus').click(function(){
+        $(this).parent().parent().parent().parent().removeClass('on');
+    })
+
     // Footer Button
     $('#footer sub').click(function(){
         $('html, body').animate({scrollTop: 0}, 1000);
