@@ -112,7 +112,7 @@
     
     /* item */
     .item-side section small { font-size: 14px; }
-    .item.solo section h2 { font-size: 40px; line-height: 1.6; }
+    .item.solo section h2 { font-size: 40px; line-height: 1.8; }
     .item-side section h3 { font-size: 36px; }
     .item-center { padding: 60px 0px; }
     .item-center section h6 { font-size: 40px; }
@@ -120,7 +120,7 @@
     .item.solo.about section small { font-size: 16px; }
     .item.solo.about section h2 { font-size: 30px; }
     .item-column header h2 { font-size: 48px; }
-    .item-column section article p { line-height: 1.6; }
+    .item-column section article p { line-height: 1.8; }
 
     /* solutions */
     #solutions header h6 { font-size: 36px; }
@@ -188,7 +188,7 @@
     
     /* item */
     .item-side section small { font-size: 14px; }
-    .item.solo section h2 { font-size: 40px; line-height: 1.6; }
+    .item.solo section h2 { font-size: 40px; line-height: 1.8; }
     .item-side section h3 { font-size: 36px; }
     .item-center { padding: 60px 0px; }
     .item-center section h6 { font-size: 40px; }
@@ -196,7 +196,7 @@
     .item.solo.about section small { font-size: 16px; }
     .item.solo.about section h2 { font-size: 30px; }
     .item-column header h2 { font-size: 48px; }
-    .item-column section article p { line-height: 1.6; }
+    .item-column section article p { line-height: 1.8; }
 
     /* solutions */
     #solutions header h6 { font-size: 36px; }
@@ -237,5 +237,156 @@
     #footer section .address span a { font-size: 14px; }
     #footer .social li a { width: 36px; height: 36px; line-height: 36px; font-size: 15px; }
     #footer .bottom small, #footer .bottom nav li { font-size: 12px; }
+
+}
+
+@media (max-width: 900px){
+
+    /* faq */
+    #faq { padding: 40px 0px; }
+    #faq section { width: 100%; padding: 0px 10%; }
+    #faq section header h6 { margin-bottom: 25px; font-size: 30px; }
+    #faq section article { padding: 25px 0px; }
+    #faq section article i { top: 24px; font-size: 20px; }
+    #faq section article span p { font-size: 13px; line-height: 1.8; }
+
+}
+
+@media (max-width: 800px){
+
+    /* item */
+    .item-center section { width: 100% !important; }
+
+    /* footer */
+    #footer { display: flex; flex-wrap: wrap; padding: 40px 10%; }
+    #footer aside { width: 100%; order: 1; }
+    #footer aside .newsletter { margin-bottom: 30px; }
+    #footer aside .newsletter strong { margin-bottom: 10px; font-weight: 500; font-size: 30px; line-height: 1.4; }
+    #footer aside .newsletter input { width: 100%; margin-bottom: 30px; font-size: 12px; border-bottom-width: 2px; }
+    #footer section { width: 100%; text-align: left; order: 2; }
+    #footer section nav { display: none; }
+    #footer section .address { width: 100%; margin: 40px 0px 0px 0px; }
+    #footer section .address strong { font-size: 30px; }
+    #footer section .address p, #footer section .address span a { font-size: 12px; }
+    #footer section .address p { line-height: 1.8; }
+    #footer .social { margin-top: 40px; order: 3; }
+    #footer .social li { margin-left: 0px; margin-right: 10px; }
+    #footer .social li a { width: 34px; height: 34px; font-size: 18px; line-height: 30px; }
+    #footer .bottom { position: relative; width: 100%; margin-top: 70px; padding-bottom: 30px; text-align: center; order: 4; }
+    #footer .bottom small { position: absolute; bottom: 0px; left: 0px; width: 100%; height: auto; font-size: 11px; }
+    #footer .bottom nav { width: 100%; margin-left: 0px; }
+    #footer .bottom nav li { float: none; display: inline-block; margin: 0px 8px; font-size: 11px; }
+
+}
+
+@media (max-width: 640px){
+
+    /* global */
+    body { font-size: 13px; }
+
+    /* bt */
+    .bt { height: 40px; padding-right: 80px; font-size: 13px; line-height: 36px; }
+    .bt::after { height: 26px; line-height: 26px; }
+
+    /* header */
+    #header span.logo img { margin: 34px 0px 0px 30px; }
+
+    /* feat */
+    #feat { width: calc(100% - 60px); height: calc(100vh - 140px); margin-left: 30px; }
+    #feat section h1 { font-size: 30px; }
+    #feat section h1 br { display: none; }
+    #feat span { top: -56px !important; left: auto !important; right: 0px !important; }
+    #feat span em { display: none; }
+    #feat span b { border-top-color: var(--primary) !important; }
+    #feat span b::before, #feat span b::after { background-color: var(--primary) !important; }
+    #feat span.on b { border-top-color: transparent !important; }
+    #feat span.on b::before, #feat span.on b::after { background-color: var(--primary); }
+    #feat span.on b::after { opacity: 0; }
+    #feat sup { width: calc(100vw - 60px); }
+    #feat.on sup { width: 0px; }
+
+    /* menu */
+    #menu aside { display: none; }
+    #menu.on nav { left: 30px !important; }
+    #menu nav li a { font-size: 18px; }
+
+    /* item */
+    .item { padding: 40px 10%; }
+    .item.solo { padding: 40px 10% !important; }
+    .item.solo section { width: 100%; }
+    .item.solo section small { font-size: 13px !important; }
+    .item.solo.about section h2 { font-size: 20px; line-height: 1.4; }
+    .item.solo section h2 { font-size: 30px; line-height: 1.2; }
+    .item.solo section p { width: 100% !important; margin-bottom: 30px !important; line-height: 1.6 !important; }
+    .item.solo section span a { font-size: 13px !important; }
+    .item-side figure { float: left; width: 100%; min-height: 200px; }
+    .item-side section { width: 100%; padding: 40px 10%; }
+    .item-side section small { font-size: 13px; }
+    .item-side section h3 { margin-bottom: 15px; font-size: 30px; }
+    .item-side section p { width: 100%; }
+    .item-center section h6 { font-weight: 500; font-size: 30px; }
+    .item-side-txt { padding: 40px 10%; }
+    .item-side-txt section h6 { width: 100%; font-size: 30px; line-height: 1.3; }
+    .item-side-txt section p { width: 100%; margin-top: 15px; padding-left: 0px; line-height: 1.8; }
+    .item-column { width: calc(100% - 60px); margin: 35px 30px; padding: 40px 10%; }
+    .item-column header small { font-size: 13px; }
+    .item-column header h2 { margin-bottom: 30px; font-size: 30px; }
+    .item-column section article { columns: 1; }
+    .item-column section article p { margin-bottom: 30px; }
+    .item-column section article p:last-of-type { margin-bottom: 0px; }
+
+    /* figure wide */
+    .figure-wide figure { height: 50vh; background-attachment: scroll; }
+
+    /* blocks */
+    #blocks { margin-bottom: 40px; padding: 0px; }
+    #blocks h6 { margin: 35px 0px; padding: 0px 10%; font-size: 30px; }
+    #blocks section { grid-template-columns: 1fr; }
+    #blocks section article { height: 460px; padding: 100px 80px 0px 80px; }
+    #blocks section article small { margin-bottom: 0px; }
+    #blocks section article small, #blocks section article strong { font-size: 30px; line-height: 1.3; }
+    #blocks sub { display: none; }
+
+    /* clients */
+    #clients { margin: 30px 0px; }
+    #clients section { width: 100%; padding: 40px 10%; }
+    #clients section small { font-size: 13px; }
+    #clients section h6 { margin: 5px 0px 10px 0px; font-size: 30px; }
+    #clients section span { display: none; }
+    #clients aside { width: 100%; padding: 0px 10%; }
+    #clients aside nav ul { grid-gap: 10px; }
+    #clients aside nav ul li { margin-bottom: 20px; }
+    #clients.wide aside { padding: 30px 10% 0px 10%; }
+    #clients.wide aside h6 { margin-bottom: 30px; }
+    #clients.wide aside nav ul { grid-template-columns: 1fr 1fr 1fr; }
+    #clients.wide aside nav ul li { margin-bottom: 30px; }
+
+    /* solutions */
+    #solutions { margin-bottom: 60px; }
+    #solutions header { padding: 40px 0px; }
+    #solutions header h6 { font-size: 30px; }
+    #solutions section { grid-template-columns: 1fr; }
+    #solutions section article { border-width: 3px; }
+    #solutions section article img { height: 70px; }
+    #solutions section article strong { font-size: 16px; }
+    #solutions section article span a { font-size: 13px; }
+
+    /* news */
+    #news header { margin-bottom: 30px; padding-bottom: 15px; border-bottom-width: 3px; }
+    #news header h6 { font-size: 16px; }
+    #news header span { display: none; }
+    #news section abbr { font-size: 12px; }
+    #news section h4 { font-size: 18px; }
+    #news section p { font-size: 14px; line-height: 1.8; }
+    #news section span a { font-size: 14px; }
+    #news section { white-space: nowrap; overflow-x: auto; }
+    #news section article { width: 40vmax; white-space: normal; }
+
+    /* contact us */
+    #contact section { width: 100%; }
+    #contact section header h6 { margin-bottom: 30px; font-size: 30px; }
+    #contact section fieldset label { width: 100%; margin-bottom: 20px; }
+    #contact section fieldset label input, #contact section fieldset label textarea { font-size: 13px; border-bottom-width: 2px; }
+    #contact section fieldset label textarea { height: 90px; }
 
 }
