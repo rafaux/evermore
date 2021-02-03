@@ -25,6 +25,17 @@ $(document).ready(function(){
         }
     })
 
+    // Consultancy
+    $('#solutions section article span a').click(function(){
+        $('#solutions section article').removeClass('on');
+        $(this).parent().parent().parent().addClass('on');
+        $('html, body').animate({scrollTop: $(this).parent().parent().parent().offset().top - 40}, 500);
+        return false;
+    })
+        $('#solutions section article sub').click(function(){
+            $(this).parent().parent().removeClass('on');
+        })
+
     // Blocks
     $('#blocks section article sub .fa-plus').click(function(){
         $('#blocks section article').removeClass('on');

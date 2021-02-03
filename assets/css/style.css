@@ -234,17 +234,26 @@ input[type=submit], button { transition: all .5s ease; }
 #blocks section article.on .sec .main { opacity: 1; transition-delay: 1s; }
 #blocks section article.on .sec .cont { opacity: 1; transition-delay: .7s; }
 
-
 /* solutions */
 #solutions { margin-bottom: 250px; padding: 0px 5%; }
 #solutions header { display: block; padding: 80px 0px; text-align: center; }
 #solutions header h6 { display: block; font-weight: 500; font-size: 60px; color: var(--blue); }
 #solutions section { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 60px; }
-#solutions section article { position: relative; display: block; min-height: 394px; padding: 50px 30px; border: 5px solid #3D508B; border-radius: 20px; text-align: center; }
+#solutions section article { position: relative; display: block; min-height: 394px; text-align: center; }
 #solutions section article img { display: block; width: auto; height: 100px; margin: 0px auto; }
 #solutions section article strong { display: block; margin-top: 30px; font-weight: 600; line-height: 1.4; color: #3D508B; }
 #solutions section article p { display: block; font-size: 20px; color: #9D9D9D; line-height: 1.4; }
-#solutions section article span a { position: absolute; bottom: 40px; left: 50%; width: auto; padding-bottom: 5px; transform: translateX(-50%); font-weight: 600; font-size: 20px; color: #3D508B; border-bottom: 3px solid #3D508B; }
+#solutions section article span a { position: absolute; bottom: 40px; left: 50%; width: auto; padding-bottom: 5px; transform: translateX(-50%); font-weight: 600; font-size: 20px; color: #3D508B; border-bottom: 3px solid #3D508B; transition: all .5s ease; }
+#solutions section article sub { position: absolute; bottom: 0px; left: 50%; width: auto; transform: translateX(-50%); font-size: 30px; color: #3D508B; cursor: pointer; transition: all .5s ease; opacity: 0; }
+#solutions section article .elem { position: absolute; z-index: 2; top: 0px; left: 0px; width: 100%; height: 100%; padding: 50px 30px; background-color: #fff; border: 5px solid #3D508B; border-radius: 20px; transition: all .5s ease; }
+#solutions section article .elem p { position: relative; display: block; margin-bottom: 20px; padding-left: 20px; font-size: 20px; line-height: 1.6; color: #303030; text-align: left; }
+#solutions section article .elem p::before { position: absolute; top: 10px; left: 0px; width: 5px; height: 5px; background-color: #303030; border-radius: 100%; content: ''; }
+#solutions section article .elem .txt { display: inline-block; width: 100%; height: 60%; margin-top: 20px; overflow-y: auto; opacity: 0; transition: all .5s ease; }
+#solutions section article.on { z-index: 20; }
+#solutions section article.on .elem { height: calc(200% + 60px); }
+#solutions section article.on .elem .txt { transition-delay: .5; opacity: 1; }
+#solutions section article.on span a { bottom: 0px; opacity: 0; }
+#solutions section article.on sub { bottom: 40px; opacity: 1; }
 
 /* faq */
 #faq { margin-bottom: 180px; padding: 180px 0px; background-color: var(--cyan); }
