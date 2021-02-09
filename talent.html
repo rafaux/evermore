@@ -191,12 +191,15 @@
             <header>
                 <strong>Sign up for our newsletter</strong>
             </header>
-            <form action=".">
+            <form action="https://github.us14.list-manage.com/subscribe/post-json?u=eb72ce7809215f1e0d5bc17f8&amp;id=20ee699a22&c=?" method="post">
                 <fieldset>
                     <label>
-                        <input type="email" placeholder="Email address" />
+                        <input type="email" name="EMAIL" required placeholder="Email address" />
+                        <small>Error!</small>
                     </label>
                     <label>
+                        <input type="hidden" name="u" value="eb72ce7809215f1e0d5bc17f8">
+                        <input type="hidden" name="id" value="20ee699a22">
                         <button class="bt white">Subscribe</button>
                     </label>
                 </fieldset>
@@ -244,6 +247,8 @@
 <!--script:js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="assets/js/core.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/3.3.0/jquery.rss.min.js"></script>
 
 </body>
 
