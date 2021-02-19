@@ -123,6 +123,9 @@ input[type=submit], button { transition: all .5s ease; }
 .item { margin-bottom: 144px; padding: 170px 5%; }
 .item.blue { background-color: var(--primary); }
 .item.white { margin-bottom: 0px; }
+.item.center { margin: 80px 0px !important; background-color: var(--light); }
+.item.center section { text-align: center; }
+.item.center section h2 { color: var(--primary) !important; }
 
     /* item -> side */
     .item-side { min-height: 754px; background-color: var(--light); }
@@ -162,11 +165,15 @@ input[type=submit], button { transition: all .5s ease; }
     .item.solo.about section { width: 100%; }
     .item.solo.about section small { display: block; margin-bottom: 20px; font-weight: 600; font-size: 20px; }
     .item.solo.about section h2 { font-size: 60px; color: var(--primary); }
+    .item.solo.solo2 { background-color: var(--primary); }
+    .item.solo.solo2 section { width: 100%; text-align: center; }
+    .item.solo.solo2 section p { width: 100%; }
 
     /* item -> center */
     .item-center { padding: 80px 0px; background-color: var(--blue); transition: all .5s ease; }
     .item-center section { display: block; width: 800px; height: auto; margin: 0px auto; text-align: center; }
     .item-center section h6 { display: block; margin-bottom: 30px; font-weight: 600; font-size: 80px; color: #fff; line-height: 1.2; transition: all .5s ease; }
+    .item-center section h6.single { margin: 40px 0px 86px 0px; }
     .item-center section h6.alt { display: none; }
     .item-center section .bt { background-color: #fff; border-color: #fff; }
     .item-center section .bt:hover { color: var(--primary); }
@@ -174,13 +181,16 @@ input[type=submit], button { transition: all .5s ease; }
     .item-center.accelerator { background-color: #3D508B; }
     .item-center.accelerator:hover { background-color: var(--watermelon); }
     .item-center.accelerator section { width: 800px; }
-    .item-center.accelerator section h6 { font-weight: 500; color: #fff; }
+    .item-center.accelerator section h6 { font-weight: 500; color: #fff !important; }
     .item-center.about { background-color: #3D508B; }
     .item-center.about:hover { background-color: var(--cyan); }
     .item-center:hover { background-color: var(--cyan); }
     .item-center:hover section h6 { color: var(--primary); }
     .item-center:hover section h6 { display: none; }
     .item-center:hover section h6.alt { display: block; }
+
+    /* item -> image */
+    .item-img figure img { display: inline-block; width: 100%; height: auto; }
 
     /* item -> side -> txt */
     .item-side-txt { padding: 110px 5%; background-color: var(--blue); }
@@ -198,7 +208,8 @@ input[type=submit], button { transition: all .5s ease; }
     .item-column header small { display: block; font-weight: 600; font-size: 20px; color: #fff; }
     .item-column header h2 { display: block; margin: 20px 0px 60px 0px; font-weight: 500; font-size: 80px; color: #fff; }
     .item-column section article { display: inline-block; width: 100%; height: auto; column-count: 2; }
-    .item-column section article p { display: block; color: #fff; line-height: 1.4; }
+    .item-column section article p { display: block; margin-bottom: 40px; color: #fff; line-height: 1.4; }
+    .item-column.history { padding-bottom: 120px; }
 
 /* figure wide */
 .figure-wide figure { display: inline-block; width: 100%; height: 410px; background-size: cover; background-position: center center; background-attachment: fixed; }
@@ -241,15 +252,17 @@ input[type=submit], button { transition: all .5s ease; }
 #solutions header h6 { display: block; font-weight: 500; font-size: 60px; color: var(--blue); }
 #solutions section { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 60px; }
 #solutions section article { position: relative; display: block; min-height: 394px; text-align: center; }
-#solutions section article img { display: block; width: auto; height: 100px; margin: 0px auto; }
-#solutions section article strong { display: block; margin-top: 30px; font-weight: 600; line-height: 1.4; color: #3D508B; }
+#solutions section article img { display: block; width: auto; height: 80px; margin: 0px auto; }
+#solutions section article strong { display: block; margin-top: 20px; font-weight: 600; line-height: 1.4; color: #3D508B; }
 #solutions section article p { display: block; font-size: 20px; color: #9D9D9D; line-height: 1.4; }
 #solutions section article span a { position: absolute; bottom: 40px; left: 50%; width: auto; padding-bottom: 5px; transform: translateX(-50%); font-weight: 600; font-size: 20px; color: #3D508B; border-bottom: 3px solid #3D508B; transition: all .5s ease; }
 #solutions section article sub { position: absolute; bottom: 0px; left: 50%; width: auto; transform: translateX(-50%); font-size: 30px; color: #3D508B; cursor: pointer; transition: all .5s ease; opacity: 0; }
-#solutions section article .elem { position: absolute; z-index: 2; top: 0px; left: 0px; width: 100%; height: 100%; padding: 50px 30px; background-color: #fff; border: 5px solid #3D508B; border-radius: 20px; transition: all .5s ease; }
+#solutions section article .elem { position: absolute; z-index: 2; top: 0px; left: 0px; width: 100%; height: 100%; padding: 50px 20px; background-color: #fff; border: 5px solid #3D508B; border-radius: 20px; transition: all .5s ease; }
 #solutions section article .elem p { position: relative; display: block; margin-bottom: 20px; padding-left: 20px; font-size: 20px; line-height: 1.6; color: #303030; text-align: left; }
 #solutions section article .elem p::before { position: absolute; top: 10px; left: 0px; width: 5px; height: 5px; background-color: #303030; border-radius: 100%; content: ''; }
 #solutions section article .elem .txt { display: inline-block; width: 100%; height: 60%; margin-top: 20px; overflow-y: auto; opacity: 0; transition: all .5s ease; }
+#solutions section article .elem.elem2 p::before { display: none; }
+#solutions section article .elem.elem2 p { margin-top: 10px; font-size: 18px; color: #9D9D9D; text-align: center; }
 #solutions section article.on { z-index: 20; }
 #solutions section article.on .elem { height: calc(200% + 60px); }
 #solutions section article.on .elem .txt { transition-delay: .5; opacity: 1; }
@@ -268,12 +281,12 @@ input[type=submit], button { transition: all .5s ease; }
 
 /* clients */
 #clients { margin: 140px 0px; background-color: var(--light); }
-#clients section { float: left; width: 50%; height: auto; padding: 120px 0px 140px 5%; }
+#clients section { float: left; width: 100%; height: auto; padding: 150px 5% 0px 5%; }
 #clients section small { display: block; font-weight: 600; font-size: 20px; }
 #clients section h6 { display: block; margin: 40px 0px; font-weight: 500; font-size: 80px; line-height: 1.2; }
-#clients aside { float: left; width: 50%; height: auto; padding: 260px 5% 0px 5%; }
-#clients aside nav ul { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px; }
-#clients aside nav ul li { display: block; margin-bottom: 40px; }
+#clients aside { float: left; width: 100%; height: auto; padding: 80px 5% 110px 5%; }
+#clients aside nav ul { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; grid-gap: 20px; }
+#clients aside nav ul li { display: block; margin-bottom: 70px; }
 #clients aside nav ul li img { display: block; width: auto; max-width: 70%; height: auto; margin: 0px auto; filter: grayscale(100%); }
 
     /* clients -> alt */
@@ -291,11 +304,10 @@ input[type=submit], button { transition: all .5s ease; }
 #news header { display: inline-block; width: 100%; margin-bottom: 70px; padding-bottom: 25px; border-bottom: 5px solid var(--primary); }
 #news header h6 { float: left; width: auto; margin-top: 32px; font-weight: 600; font-size: 20px; }
 #news header span a { position: relative; float: right; width: auto; font-weight: 600; font-size: 20px; color: var(--primary); }
-#news header span a::after { display: inline-block; width: 48px; height: 48px; margin: 0px 0px -5px 30px; border-radius: 10px; border: 3px solid var(--primary); transition: all .5s ease; content: ''; }
-#news header span a::before { position: absolute; top: 10px; right: 12px; font-size: 24px; font-weight: bold; transform: rotate(45deg); font-family: 'Font Awesome 5 Pro'; transition: all .5s ease; content: '\f0de'; }
+#news header span a::after { display: inline-block; width: 48px; height: 48px; margin: 0px 0px -5px 30px; border-radius: 10px; border: 3px solid var(--primary); transition: all .3s ease; content: ''; }
+#news header span a::before { position: absolute; top: 10px; right: 12px; font-size: 24px; font-weight: bold; transform: rotate(45deg); font-family: 'Font Awesome 5 Pro'; transition: all .3s ease; content: '\f0de'; }
 #news header span a:hover { color: var(--watermelon); }
-#news header span a:hover::after { background-color: var(--watermelon); border-color: var(--watermelon); }
-#news header span a:hover::before { color: #fff; }
+#news header span a:hover::after { border-radius: 0px; border-color: var(--watermelon); }
 #news section { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 35px; }
 #news section figure img { display: block; width: 100%; height: 300px; margin-bottom: 30px; object-fit: cover; }
 #news section abbr { display: block; margin-bottom: 15px; font-size: 20px; color: #9D9D9D; text-decoration: none; }
@@ -305,13 +317,18 @@ input[type=submit], button { transition: all .5s ease; }
 #news section span a:hover { color: var(--watermelon); border-bottom-color: var(--watermelon); }
 
 /* contact */
-#contact { padding: 120px 0px; background-color: var(--blue); }
+#contact { padding: 60px 0px 20px 0px; background-color: var(--blue); }
 #contact section { display: block; width: 640px; height: auto; margin: 0px auto; }
-#contact section header h6 { display: block; margin-bottom: 60px; text-align: center; color: #fff; font-weight: 500; font-size: 80px; }
+#contact section header h6 { display: block; margin-bottom: 40px; text-align: center; color: #fff; font-weight: 500; font-size: 80px; }
+#contact section header p { display: block; margin-bottom: 30px; font-weight: 500; font-size: 20px; color: #fff; text-align: center; }
+#contact section header nav { display: inline-block; width: 100%; height: auto; margin-bottom: 40px; text-align: center; }
+#contact section header nav li { display: inline-block; width: 180px; height: 52px; margin: 0px 10px; border: 4px solid #fff; text-align: center; font-weight: bold; font-size: 18px; color: #fff; line-height: 42px; cursor: pointer; transition: all .5s ease; }
+#contact section header nav li.on { background-color: #fff; color: var(--blue); }
 #contact section fieldset { display: inline-block; width: 100%; height: auto; }
 #contact section fieldset label { display: inline-block; width: 49%; height: auto; margin-bottom: 40px; padding: 0px 17px; }
 #contact section fieldset label.lb100 { width: 100%; }
 #contact section fieldset label input { display: inline-block; width: 100%; height: 50px; border-bottom: 3px solid #fff; color: #fff; font-weight: 600; font-size: 20px; }
+#contact section fieldset label input#get-interested { display: none; }
 #contact section fieldset label textarea { display: inline-block; width: 100%; height: 150px; border-bottom: 3px solid #fff; color: #fff; font-weight: 600; font-size: 20px; }
 #contact section fieldset label ::placeholder { color: #fff; }
 #contact section fieldset label.lbsubmit { text-align: center; }
@@ -333,7 +350,7 @@ input[type=submit], button { transition: all .5s ease; }
 #footer aside { float: left; width: 50%; height: auto; }
 #footer aside .newsletter { position: relative; display: inline-block; width: 100%; height: auto; }
 #footer aside .newsletter strong { display: block; margin-bottom: 36px; font-weight: 500; font-size: 50px; color: #fff; }
-#footer aside .newsletter input { display: inline-block; width: 300px; height: 60px; margin-right: 20px; border-bottom: 3px solid #fff; font-weight: 600; font-size: 20px; color: #fff; }
+#footer aside .newsletter input { display: inline-block; width: 280px; height: 60px; margin-right: 20px; border-bottom: 3px solid #fff; font-weight: 600; font-size: 20px; color: #fff; }
 #footer aside .newsletter input::placeholder { color: #fff; }
 #footer aside .newsletter small { display: none; position: absolute; bottom: -20px; left: 0px; width: auto; margin-top: 7px; font-size: 10px; color: #fff; text-transform: uppercase; font-weight: bold; }
 #footer aside .newsletter .ok,
@@ -345,11 +362,11 @@ input[type=submit], button { transition: all .5s ease; }
 #footer aside .newsletter .no::after { content: '\f00d'; }
 #footer aside .newsletter .no::after { border-left-color: #fff !important; }
 #footer section { float: left; width: 50%; height: auto; text-align: right; }
-#footer section nav { display: inline-block; width: 30%; margin-top: 16px; vertical-align: top; }
+#footer section nav { display: inline-block; width: 22%; margin-top: 16px; vertical-align: top; }
 #footer section nav li a { display: block; margin-bottom: 36px; font-weight: 600; font-size: 20px; color: #fff; }
 #footer section nav li:last-of-type a { margin-bottom: 0px; }
 #footer section nav li:hover { text-decoration: underline; }
-#footer section .address { display: inline-block; width: 35%; margin: 12px 0px 0px 100px; vertical-align: top; }
+#footer section .address { display: inline-block; width: 47%; margin: 12px 0px 0px 60px; vertical-align: top; }
 #footer section .address strong { display: block; font-weight: 500; font-size: 25px; color: #fff; }
 #footer section .address p { display: block; margin: 24px 0px 30px 0px; font-size: 20px; color: #fff; line-height: 1.4; } 
 #footer section .address span a { display: block; margin-top: 15px; font-weight: 500; font-size: 20px; color: #fff; }

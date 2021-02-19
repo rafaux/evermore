@@ -15,6 +15,14 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $(window).height()}, 1000);
     })
 
+    // Lets Talk
+    $('#contact section header nav li').click(function(){
+        var name = $(this).html();
+        $('#get-interested').val(name);
+        $('#contact section header nav li').removeClass('on');
+        $(this).addClass('on');
+    })
+
     // Faq
     $('#faq section article').click(function(){
         if($(this).find('span').is(':visible')){
