@@ -28,6 +28,7 @@
     .item-side section { padding-top: 80px; }
     .item-side section h3 { font-size: 40px; }
     .item-center section h6 { font-size: 60px; }
+    .item-center section h6.single { margin: 30px 0px 72px 0px; }
     .item-side-txt { padding: 55px 5%; }
     .item-side-txt section h6 { font-size: 60px; }
     .item-column { margin: 70px 50px; padding: 100px 5%; }
@@ -41,7 +42,7 @@
     #clients section { padding: 30px 0px 70px 5%; }
     #clients section small { font-size: 18px; }
     #clients section h6 { font-size: 60px; }
-    #clients aside { padding-top: 90px; }
+    #clients aside { padding: 0px 5%; }
     #clients.wide aside { padding: 70px 5% 30px 5%; }
 
     /* news */
@@ -116,6 +117,7 @@
     .item-side section h3 { font-size: 36px; }
     .item-center { padding: 60px 0px; }
     .item-center section h6 { font-size: 40px; }
+    .item-center section h6.single { margin: 15px 0px 63px 0px; }
     .item-side-txt section h6 { font-size: 40px; }
     .item.solo.about section small { font-size: 16px; }
     .item.solo.about section h2 { font-size: 30px; }
@@ -173,6 +175,9 @@
     #faq section article { padding: 25px 0px; }
     #faq section article i { top: 24px; font-size: 20px; }
     #faq section article span p { font-size: 13px; line-height: 1.8; }
+
+    /* clients */
+    #clients aside nav ul { grid-template-columns: 1fr 1fr 1fr 1fr; }
 
 }
 
@@ -249,6 +254,7 @@
     .item-side section h3 { margin-bottom: 15px; font-size: 30px; }
     .item-side section p { width: 100%; }
     .item-center section h6 { font-weight: 500; font-size: 30px; }
+    .item-center section h6.single { margin: 5px 0px 61px 0px; }
     .item-side-txt { padding: 40px 10%; }
     .item-side-txt section h6 { width: 100%; font-size: 30px; line-height: 1.3; }
     .item-side-txt section p { width: 100%; margin-top: 15px; padding-left: 0px; line-height: 1.8; }
@@ -289,7 +295,7 @@
     #clients section h6 { margin: 5px 0px 10px 0px; font-size: 30px; }
     #clients section span { display: none; }
     #clients aside { width: 100%; padding: 0px 10%; }
-    #clients aside nav ul { grid-gap: 10px; }
+    #clients aside nav ul { grid-gap: 10px; grid-template-columns: 1fr 1fr 1fr; }
     #clients aside nav ul li { margin-bottom: 20px; }
     #clients.wide aside { padding: 30px 10% 0px 10%; }
     #clients.wide aside h6 { margin-bottom: 30px; }
