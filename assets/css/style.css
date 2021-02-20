@@ -9,7 +9,7 @@
 .mb-0 { margin-bottom: 0px !important; }
 
 /* bt */
-.bt { position: relative; display: inline-block; width: auto; height: 60px; padding: 0px 124px 0px 28px; border: 4px solid var(--primary); color: var(--primary); border-radius: 10px; font-weight: 600; font-size: 20px; line-height: 48px; }
+.bt { position: relative; display: inline-block; width: auto; height: 60px; padding: 0px 124px 0px 28px; border: 4px solid var(--primary); color: var(--primary); border-radius: 10px; font-weight: 600; font-size: 18px; line-height: 50px; }
 .bt::after { position: absolute; top: 50%; right: 0px; width: 64px; height: 36px; border-left: 2px solid var(--primary); transform: translateY(-50%); transition: all .5s ease; font-weight: bold; font-family: 'Font Awesome 5 Pro'; text-align: center; line-height: 36px; content: '\f0da'; }
 .bt:hover { background-color: var(--watermelon); border-color: var(--watermelon); color: #fff; }
 .bt:hover::after { border-left-color: #fff; }
@@ -20,7 +20,7 @@
 
 /* base */
 a { text-decoration: none; transition: all .5s ease; }
-body { background-color: #fff; color: var(--primary); font: normal 30px 'Poppins', sans-serif; opacity: 0; transition: all .5s ease; }
+body { background-color: #fff; color: var(--primary); font: normal 20px 'Poppins', sans-serif; opacity: 0; transition: all .5s ease; }
 body.on { opacity: 1; }
 input, textarea, select, button { font: normal 30px 'Poppins', sans-serif; appearance: none; -webkit-appearance: none; border-radius: 0px; cursor: pointer; }
 input[type=submit], button { transition: all .5s ease; }
@@ -33,9 +33,9 @@ input[type=submit], button { transition: all .5s ease; }
 #feat { width: calc(100% - 100px); height: calc(100vh - 195px); margin: 0px 0px 105px 50px; padding-right: 10vw; }
 #feat sup { position: absolute; z-index: 4; top: 0px; right: 0px; width: calc(100vw - 100px); height: 100%; transition: all .3s ease; }
 #feat sup a { display: block; width: 100%; height: 100%; text-indent: -9999em; }
-#feat section { position: absolute; z-index: 2; top: 50%; left: 50%; width: 70%; height: auto; transform: translate(-50%, -50%); transition: all .5s ease; opacity: 0; }
-#feat section small { display: block; margin-bottom: 15px; font-weight: 600; font-size: 60px; }
-#feat section h1 { display: block; margin-bottom: 10px; font-weight: 600; font-size: 80px; line-height: 1.2; }
+#feat section { position: absolute; z-index: 2; top: 50%; left: 44%; width: 70%; height: auto; transform: translate(-50%, -50%); transition: all .5s ease; opacity: 0; }
+#feat section small { display: block; margin-bottom: 15px; font-weight: 600; font-size: 40px; }
+#feat section h1 { display: block; margin-bottom: 10px; font-weight: 600; font-size: 70px; line-height: 1.2; }
 #feat section h1 strong { font-weight: 600; color: var(--watermelon); }
 #feat section p { display: block; line-height: 1.4; }
 #feat span { position: absolute; z-index: 20; top: 50%; left: 0px; width: 42px; transform: translateY(-50%); transition: all .3s ease; cursor: pointer; opacity: 0; }
@@ -65,14 +65,14 @@ input[type=submit], button { transition: all .5s ease; }
     #menu { position: absolute; z-index: 10; top: 50%; left: 0px; width: 40px; height: 40px; background-color: var(--blue); transform: translateY(-50%); transition: all .5s ease; opacity: 0; overflow: hidden; }
     #menu nav { position: absolute; top: 50%; left: 70px; width: auto; transform: translateY(-50%); transition: all .5s ease; opacity: 0; }
     #menu nav li { display: block; margin-bottom: 25px; }
-    #menu nav li a { position: relative; display: inline-block; width: auto; font-size: 40px; color: #fff; }
+    #menu nav li a { position: relative; display: inline-block; width: auto; font-size: 32px; color: #fff; }
     #menu nav li a::after { position: absolute; bottom: -15px; left: 0px; width: 0%; height: 5px; background-color: #fff; transition: all .5s ease; content: ''; }
     #menu nav li a:hover::after { width: 100%; }
     #menu nav li.on a::after { width: 100%; background-color: var(--watermelon); }
     #menu aside { position: absolute; top: 50%; right: 70px; width: 240px; height: auto; transform: translateY(-50%); transition: all .5s ease; opacity: 0; }
-    #menu aside strong { display: block; font-weight: 500; font-size: 25px; color: #fff; }
-    #menu aside p { display: block; margin: 24px 0px 30px 0px; font-size: 20px; color: #fff; line-height: 1.4; } 
-    #menu aside small a { display: block; margin-top: 15px; font-weight: 500; font-size: 20px; color: #fff; }
+    #menu aside strong { display: block; font-weight: 500; font-size: 22px; color: #fff; }
+    #menu aside p { display: block; margin: 24px 0px 30px 0px; font-size: 18px; color: #fff; line-height: 1.4; } 
+    #menu aside small a { display: block; margin-top: 15px; font-weight: 500; font-size: 18px; color: #fff; }
     #menu aside small a:hover { text-decoration: underline; }
     #menu.on { width: 100%; height: 100%; opacity: 1; }
     #menu.on nav { left: 140px; opacity: 1; transition-delay: .3s; }
@@ -128,13 +128,13 @@ input[type=submit], button { transition: all .5s ease; }
 .item.center section h2 { color: var(--primary) !important; }
 
     /* item -> side */
-    .item-side { min-height: 754px; background-color: var(--light); }
-    .item-side section { float: left; width: 50%; height: auto; padding: 120px 5% 0px 5%; }
+    .item-side { min-height: 554px; background-color: var(--light); }
+    .item-side section { float: left; width: 50%; height: auto; padding: 80px 5% 0px 5%; }
     .item-side section small { display: block; font-weight: 600; font-size: 20px; }
-    .item-side section h3 { display: block; margin: 10px 0px 30px 0px; font-weight: 500; font-size: 60px; line-height: 1.2; }
+    .item-side section h3 { display: block; margin: 10px 0px 30px 0px; font-weight: 500; font-size: 40px; line-height: 1.2; }
     .item-side section h3 strong { font-weight: 500; color: var(--blue); }
     .item-side section p { display: block; width: 85%; margin-bottom: 30px; line-height: 1.6; }
-    .item-side figure { position: relative; float: right; width: 50%; height: auto; min-height: 754px; background-color: var(--primary); }
+    .item-side figure { position: relative; float: right; width: 50%; height: auto; min-height: 554px; background-color: var(--primary); }
     .item-side figure img { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; }
     .item-side.inverse figure { float: left; }
     .item-side.cyan { background-color: var(--cyan); }
@@ -147,7 +147,7 @@ input[type=submit], button { transition: all .5s ease; }
 
     /* item -> solo */
     .item.solo section { display: inline-block; width: 75%; height: auto; }
-    .item.solo section h2 { display: block; margin-bottom: 20px; font-weight: 500; font-size: 80px; line-height: 1.2; color: #fff; }
+    .item.solo section h2 { display: block; margin-bottom: 20px; font-weight: 500; font-size: 60px; line-height: 1.2; color: #fff; }
     .item.solo section p { display: block; width: 85%; color: #fff; line-height: 1.4; }
     .item.solo.full section { width: 100%; }
     .item.solo.blue { margin-bottom: 0px; background-color: #3D508B; }
@@ -172,8 +172,8 @@ input[type=submit], button { transition: all .5s ease; }
     /* item -> center */
     .item-center { padding: 80px 0px; background-color: var(--blue); transition: all .5s ease; }
     .item-center section { display: block; width: 800px; height: auto; margin: 0px auto; text-align: center; }
-    .item-center section h6 { display: block; margin-bottom: 30px; font-weight: 600; font-size: 80px; color: #fff; line-height: 1.2; transition: all .5s ease; }
-    .item-center section h6.single { margin: 40px 0px 86px 0px; }
+    .item-center section h6 { display: block; margin-bottom: 30px; font-weight: 600; font-size: 60px; color: #fff; line-height: 1.2; transition: all .5s ease; }
+    .item-center section h6.single { margin: 40px 0px 62px 0px; }
     .item-center section h6.alt { display: none; }
     .item-center section .bt { background-color: #fff; border-color: #fff; }
     .item-center section .bt:hover { color: var(--primary); }
@@ -194,7 +194,7 @@ input[type=submit], button { transition: all .5s ease; }
 
     /* item -> side -> txt */
     .item-side-txt { padding: 110px 5%; background-color: var(--blue); }
-    .item-side-txt section h6 { display: inline-block; width: 49%; height: auto; vertical-align: middle; color: #fff; font-weight: 500; font-size: 80px; line-height: 1.4; }
+    .item-side-txt section h6 { display: inline-block; width: 49%; height: auto; vertical-align: middle; color: #fff; font-weight: 500; font-size: 50px; line-height: 1.4; }
     .item-side-txt section p { display: inline-block; width: 49%; height: auto; padding-left: 5%; vertical-align: middle; color: #fff; line-height: 1.6; }
 
         /* item -> side -> txt (white) */
@@ -216,12 +216,12 @@ input[type=submit], button { transition: all .5s ease; }
 
 /* blocks */
 #blocks { margin-bottom: 200px; padding: 0px 5%; overflow: hidden; }
-#blocks h6 { display: block; margin: 150px 0px; text-align: center; line-height: 1.3; font-weight: 500; font-size: 80px; }
+#blocks h6 { display: block; margin: 150px 0px; text-align: center; line-height: 1.3; font-weight: 500; font-size: 60px; }
 #blocks section { position: relative; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 30px; }
-#blocks section article { position: relative; height: 500px; }
+#blocks section article { position: relative; height: 400px; }
 #blocks section article .main { position: relative; z-index: 3; display: inline-block; width: 100%; height: 100%; padding: 100px 70px 0px 70px; }
-#blocks section article .main small { display: block; margin-bottom: 10px; font-weight: 500; font-size: 50px; color: var(--primary); }
-#blocks section article .main strong { display: block; font-weight: 500; font-size: 50px; color: var(--primary); line-height: 1.2; }
+#blocks section article .main small { display: block; margin-bottom: 10px; font-weight: 500; font-size: 40px; color: var(--primary); }
+#blocks section article .main strong { display: block; font-weight: 500; font-size: 36px; color: var(--primary); line-height: 1.2; }
 #blocks section article.blue,
 #blocks section article.blue .main,
 #blocks section article.blue .sec { background-color: var(--blue); }
@@ -234,7 +234,7 @@ input[type=submit], button { transition: all .5s ease; }
 #blocks section article.white .main,
 #blocks section article.white .sec { background-color: var(--light); }
 #blocks section article.white small { color: var(--watermelon); }
-#blocks section article sub { position: absolute; z-index: 10; bottom: 40px; right: 40px; font-size: 50px; color: var(--primary); cursor: pointer; }
+#blocks section article sub { position: absolute; z-index: 10; bottom: 40px; right: 40px; font-size: 36px; color: var(--primary); cursor: pointer; }
 #blocks section article .sec { position: absolute; z-index: 20; top: 0px; left: 0vmax; width: 0px; height: 100%; opacity: 0; transition: all 1s ease-in-out; }
 #blocks section article .sec .main { float: left; width: 33%; height: 100%; opacity: 0; transition: all .3s ease; }
 #blocks section article .sec .cont { float: left; width: 67%; height: 100%; padding: 50px; white-space: nowrap; overflow-x: auto; opacity: 0; transition: all 3s ease; }
@@ -349,8 +349,8 @@ input[type=submit], button { transition: all .5s ease; }
 #footer { padding: 130px 5% 120px 5%; background-color: var(--primary); }
 #footer aside { float: left; width: 50%; height: auto; }
 #footer aside .newsletter { position: relative; display: inline-block; width: 100%; height: auto; }
-#footer aside .newsletter strong { display: block; margin-bottom: 36px; font-weight: 500; font-size: 50px; color: #fff; }
-#footer aside .newsletter input { display: inline-block; width: 280px; height: 60px; margin-right: 20px; border-bottom: 3px solid #fff; font-weight: 600; font-size: 20px; color: #fff; }
+#footer aside .newsletter strong { display: block; margin-bottom: 36px; font-weight: 500; font-size: 36px; color: #fff; }
+#footer aside .newsletter input { display: inline-block; width: 280px; height: 60px; margin-right: 18px; border-bottom: 3px solid #fff; font-weight: 600; font-size: 20px; color: #fff; }
 #footer aside .newsletter input::placeholder { color: #fff; }
 #footer aside .newsletter small { display: none; position: absolute; bottom: -20px; left: 0px; width: auto; margin-top: 7px; font-size: 10px; color: #fff; text-transform: uppercase; font-weight: bold; }
 #footer aside .newsletter .ok,
@@ -363,22 +363,22 @@ input[type=submit], button { transition: all .5s ease; }
 #footer aside .newsletter .no::after { border-left-color: #fff !important; }
 #footer section { float: left; width: 50%; height: auto; text-align: right; }
 #footer section nav { display: inline-block; width: 22%; margin-top: 16px; vertical-align: top; }
-#footer section nav li a { display: block; margin-bottom: 36px; font-weight: 600; font-size: 20px; color: #fff; }
+#footer section nav li a { display: block; margin-bottom: 36px; font-weight: 600; font-size: 18px; color: #fff; }
 #footer section nav li:last-of-type a { margin-bottom: 0px; }
 #footer section nav li:hover { text-decoration: underline; }
 #footer section .address { display: inline-block; width: 47%; margin: 12px 0px 0px 60px; vertical-align: top; }
-#footer section .address strong { display: block; font-weight: 500; font-size: 25px; color: #fff; }
-#footer section .address p { display: block; margin: 24px 0px 30px 0px; font-size: 20px; color: #fff; line-height: 1.4; } 
-#footer section .address span a { display: block; margin-top: 15px; font-weight: 500; font-size: 20px; color: #fff; }
+#footer section .address strong { display: block; font-weight: 500; font-size: 22px; color: #fff; }
+#footer section .address p { display: block; margin: 24px 0px 30px 0px; font-size: 18px; color: #fff; line-height: 1.4; } 
+#footer section .address span a { display: block; margin-top: 15px; font-weight: 500; font-size: 18px; color: #fff; }
 #footer section .address span a:hover { text-decoration: underline; }
 #footer .bottom { float: left; width: auto; margin-top: 140px; }
-#footer .bottom small { float: left; width: auto; font-size: 15px; color: #fff; }
+#footer .bottom small { float: left; width: auto; font-size: 13px; color: #fff; }
 #footer .bottom nav { float: left; width: auto; margin-left: 20px; }
-#footer .bottom nav li { float: left; width: auto; margin-left: 17px; font-size: 15px; }
+#footer .bottom nav li { float: left; width: auto; margin-left: 17px; font-size: 13px; }
 #footer .bottom nav li a { display: block; color: #fff; text-decoration: underline; }
 #footer .social { float: right; width: auto; margin-top: 120px; }
-#footer .social li { display: inline-block; width: auto; margin-left: 15px; font-size: 26px; }
-#footer .social li a { display: block; width: 46px; height: 46px; border: 2px solid #fff; color: #fff; border-radius: 100%; text-align: center; line-height: 42px; }
+#footer .social li { display: inline-block; width: auto; margin-left: 15px; font-size: 20px; }
+#footer .social li a { display: block; width: 40px; height: 40px; border: 2px solid #fff; color: #fff; border-radius: 100%; text-align: center; line-height: 36px; }
 #footer .social li a:hover { background-color: var(--watermelon); border-color: var(--watermelon); color: #fff; }
 #footer sub { position: absolute; top: -18px; left: 50%; width: 66px; height: 18px; border-top-left-radius: 12px; border-top-right-radius: 12px; background-color: #fff; color: var(--primary); font-size: 14px; transform: translateX(-50%); cursor: pointer; text-align: center; line-height: 18px; transition: all .5s ease; }
 #footer sub:hover { background-color: var(--watermelon); color: #fff; }
